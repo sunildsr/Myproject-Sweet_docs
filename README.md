@@ -1,6 +1,3 @@
-# Sweety
-
-This application was created as the code challenge for CodeTheory.io. See full spec [here]https://github.com/codetheoryio/sweety_docs/
 
 ## Setup
 
