@@ -1,0 +1,33 @@
+<%= render partial: "common/header" %>
+<% if @report_type == ["monthly"] %>
+  <h1><%= @report_type.first.capitalize %> Report Results for <%= format_as_month(@month) %></h1>
+<% else %>
+  <h1><%= @report_type.first.capitalize %> Report Results for <%= format_date(@date) %></h1>
+<% end %>
+<br/>
+<br/>
+<div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Type of Reading</th>
+        <th>In  mg/dl</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Maximum </td>
+        <td> <%= @data[:maximum] %> </td>
+      </tr>
+	  <tr>
+        <td>Minimum </td>
+        <td> <%= @data[:minimum] %> </td>
+      </tr>
+	    <tr>
+        <td>Minimum </td>
+        <td> <%= @data[:average] %> </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>

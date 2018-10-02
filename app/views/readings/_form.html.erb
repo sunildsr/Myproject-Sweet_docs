@@ -1,0 +1,8 @@
+
+<h5>Enter a  Glucose reading:</h5>
+<%= form_for @reading do |f| %>
+  <%= f.text_field :glucose_reading, :placeholder =>  "mg/dl",  :onkeypress => "return isNumberKey(event)"%>
+  <%= f.submit "Submit", class: "btn btn-primary"%>
+<% end  %>
+
+
